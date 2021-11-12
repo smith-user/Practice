@@ -13,7 +13,7 @@ int task7() {
     string result;
     int j;
     int i = 0;
-    while(i <= input.length() - substr.length())
+    while(i <= (input.length() - substr.length()))
     {
         j = 0;
         while(j < substr.length() && input[i + j] == substr[j])
@@ -29,7 +29,7 @@ int task7() {
             i++;
         }
     }
-    cout << "Полученная строка:" << endl;
+    cout << "Полученная строка: ";
     cout << result << endl;
     return 0;
 }
@@ -47,13 +47,13 @@ int task13() {
     for (char c : input2)
         if (result.find(c) == -1 && input1.find(c) == -1)
             result += c;
-    cout << "Полученная строка:" << endl;
+    cout << "Полученная строка: ";
     cout << result << endl;
     return 0;
 }
 
 int main() {
     task7();
-    //task13();
+    task13();
     return 0;
 }
