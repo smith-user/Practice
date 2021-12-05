@@ -1,51 +1,27 @@
 #include <iostream>
-#include <cmath>
+#include <map>
 
 using namespace std;
 
-int task1491 () {
-    const int arrayLength = 100000;
-    int N;
-    cin >> N;
-    int a, b, c;
-    int knights[arrayLength] = {};
-
-    for (int i = 0; i < N + 1; i++)
-    {
-        cin >> a >> b >> c;
-        a--;
-        for(; a < b; a++)
-            knights[a] += c;
-    }
-
-    for (int i = 0; i < N; i++)
-        cout << knights[i] << ' ';
-
-    return 0;
-}
-
-int task1510 () {
-    const long arrayLength = (int)pow(10, 9);
-    int N;
-    cin >> N;
-    int a;
-    int numbers[arrayLength] = {}
-
-    for (int i = 0; i < N + 1; i++)
-    {
-        cin >> a >> b >> c;
-        a--;
-        for(; a < b; a++)
-            knights[a] += c;
-    }
-
-    for (int i = 0; i < N; i++)
-        cout << knights[i] << ' ';
-
-    return 0;
-}
-
-
 int main() {
-    task1491();
+    long N;
+    cin >> N;
+    long a;
+    long result = 0;
+    map <long, long> mp;
+
+    for (long i = 0; i < N; i++)
+    {
+        cin >> a;
+        if (mp.find(a) == mp.end())
+            mp[a] = 1;
+        else
+            mp[a] += 1;
+
+        if (mp[a] > (N/2))
+            result = a;
+    }
+    cout << result << endl;
+
+    return 0;
 }
