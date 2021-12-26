@@ -27,6 +27,7 @@ int main() {
         outputFile << "File Reading Error!" << endl;
         return 1;
     }
+    
     int countCellTower;
     string name;
     int x;

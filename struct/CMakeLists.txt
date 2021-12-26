@@ -3,4 +3,4 @@ project(struct)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(struct main.cpp)
+add_executable(struct task945.cpp)
