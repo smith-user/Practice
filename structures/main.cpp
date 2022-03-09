@@ -9,13 +9,7 @@ struct Student {
 };
 
 int main() {
-    int n;
-    cin >> n;
-    auto* students = new Student[n];
-    string t;
-    for (int i = 0; i < n; i++) {
-        cin >> students[i].name >> students[i].element;
-    }
-
+    double n = - 0.4 - 0.08 - 0.021333 - 0.0064 - 0.002048 - 0.000682 - 0.000234 - 0.000081 - 0.000029 - 0.000010;
+    cout << n << endl;
 }
 
