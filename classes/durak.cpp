@@ -23,6 +23,8 @@ public:
 
 class Bank {
     vector <Card> bank;
+
+public:
     Bank() {
         Card temp[36];
         int i = 0;
@@ -41,7 +43,7 @@ class Bank {
             bank[j].trump = bank[j].suit == trump.suit;
     }
     ~Bank() {};
-public:
+
     Card TakeCard() {
         Card card = bank.front();
         bank.erase(bank.begin());
@@ -51,6 +53,7 @@ public:
 
 class Player
 {
+public:
     vector<Card> hand;
     Player(Bank bank)
     {
@@ -58,11 +61,12 @@ class Player
             hand.push_back(bank.TakeCard());
     }
     ~Player() {};
-public:
+
     void Collect(Bank bank)
     {
         hand.push_back(bank.TakeCard());
     }
+
     void Collect(Card card)
     {
         hand.push_back(card);
@@ -72,9 +76,9 @@ public:
 
 class Game {
     vector<Card> desk;
+public:
     Game() {};
     ~Game() {};
-public:
     void Move(Card card) {
         desk.push_back(card);
     }
