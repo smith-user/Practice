@@ -1,4 +1,4 @@
-###Кравченя Андрей КНМО-101
+Кравченя Андрей КНМО-101
 
 Homework: <br>
 [ЗАДАЧА №149](https://acmp.ru/index.asp?main=task&id_task=149) <br>
