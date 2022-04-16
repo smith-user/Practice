@@ -1,0 +1,15 @@
+/.cmake
+/cmake-build-debug
+/CMakeFiles
+/Testing
+/.idea
+.ninja_deps
+.ninja_log
+april16
+build.ninja
+cmake_install.cmake
+CMakeCache.txt
+CMakeLists.txt
+input.txt
+output.txt
+main.cpp
