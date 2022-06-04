@@ -1,6 +1,6 @@
 Кравченя Андрей КНМО-101
 
-MAY 14: homework <br>
+June 4: homework <br>
 [№269](https://acmp.ru/index.asp?main=task&id_task=269) Тормозной механизм<br>
 [№335](https://acmp.ru/index.asp?main=task&id_task=335) Трипростые числа<br>
 [№510](https://acmp.ru/index.asp?main=task&id_task=510) Шоколадка<br>
